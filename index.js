@@ -1,8 +1,5 @@
 function fetchServerTime () {
-	return axios.get('small.json', {
-		headers: {
-			'Cache-Control': 'no-cache'
-		}
+	return axios.get('small.json?' + (new Date()).getTime(), {
 	})
 	.then(
 		(res) => {
