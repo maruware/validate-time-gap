@@ -1,5 +1,5 @@
 function fetchServerTime () {
-	return axios.get('/small.json')
+	return axios.get('small.json')
 	.then(
 		(res) => {
 			console.log('server date', res.headers.date)
